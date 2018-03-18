@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-package com.arnab.imagerecogapp;
+package com.arnab.skinsense;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

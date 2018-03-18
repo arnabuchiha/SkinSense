@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-package com.arnab.imagerecogapp;
+package com.arnab.skinsense;
 
 import org.junit.Test;
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ImageRecognitionApp</string>
+    <string name="app_name">Skin Sense</string>
     <string name="toggle_camera">Toggle Camera</string>
     <string name="detect_object">Detect Object</string>
 </resources>
