@@ -46,9 +46,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                     Toast.makeText(LoginActivity.this, "Failed", Toast.LENGTH_SHORT).show();
                                 }
                                 else {
-                                    Toast.makeText(LoginActivity.this, "done", Toast.LENGTH_SHORT).show();
-                                    setResult(9);
-                                    finish();
+                                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                                    if(user.isEmailVerified()){
+                                        Toast.makeText(LoginActivity.this, "done", Toast.LENGTH_SHORT).show();
+                                        setResult(9);
+                                        finish();
+                                    }
+                                    else{
+                                        Toast.makeText(LoginActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+                                    }
                                 }
                             }
                         });
@@ -65,8 +71,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(resultCode==requestCode){
-            setResult(9);
-            finish();
+
         }
         else {
             setResult(-1);
