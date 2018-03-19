@@ -76,7 +76,7 @@ public class SignupActivity extends AppCompatActivity {
 
 
 
-                                    
+
                                     User u = new User(username.getText().toString(),email.getText().toString());
                                     databaseReference.child("user").child(u.getUsername()).setValue(u);
                                     sendVerification();
