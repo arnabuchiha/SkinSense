@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -32,7 +33,8 @@ public class NavigationActivity extends AppCompatActivity
                 /*Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();*/
                 startActivity(new Intent(NavigationActivity.this, MainActivity.class));
-                Toast.makeText(NavigationActivity.this, "Snap", Toast.LENGTH_SHORT).show();
+                Log.d("Tanay", "Detection Activity");
+                //Toast.makeText(NavigationActivity.this, "Snap", Toast.LENGTH_SHORT).show();
             }
         });
 
