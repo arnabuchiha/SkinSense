@@ -59,13 +59,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        cameraView = (CameraView) findViewById(R.id.cameraView);
-        imageViewResult = (ImageView) findViewById(R.id.imageViewResult);
-        textViewResult = (TextView) findViewById(R.id.textViewResult);
+        cameraView = findViewById(R.id.cameraView);
+        imageViewResult = findViewById(R.id.imageViewResult);
+        textViewResult = findViewById(R.id.textViewResult);
         textViewResult.setMovementMethod(new ScrollingMovementMethod());
 
-        btnToggleCamera = (Button) findViewById(R.id.btnToggleCamera);
-        btnDetectObject = (Button) findViewById(R.id.btnDetectObject);
+        btnToggleCamera = findViewById(R.id.btnToggleCamera);
+        btnDetectObject = findViewById(R.id.btnDetectObject);
 
         cameraView.addCameraKitListener(new CameraKitEventListener() {
             @Override

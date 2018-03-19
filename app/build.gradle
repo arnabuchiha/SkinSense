@@ -29,6 +29,7 @@ android {
         jackOptions {
             enabled true
         }
+        android.defaultConfig.vectorDrawables.useSupportLibrary = true;
     }
     buildTypes {
         release {
@@ -43,6 +44,9 @@ android {
 }
 
 dependencies {
+    implementation 'com.android.support:support-v4:27.1.0'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
