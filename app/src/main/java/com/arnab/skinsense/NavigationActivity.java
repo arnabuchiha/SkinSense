@@ -91,7 +91,14 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
         authStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if(user!=null){
+                    Toast.makeText(NavigationActivity.this, "Signed in as: "+user.getEmail(), Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Toast.makeText(NavigationActivity.this, "Signed Out", Toast.LENGTH_SHORT).show();
+                    startActivityForResult(new Intent(NavigationActivity.this, LoginActivity.class), 9);
+                }
             }
         };
     }
@@ -127,7 +134,7 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_signout) {
             firebaseAuth.signOut();
             return true;
         }
