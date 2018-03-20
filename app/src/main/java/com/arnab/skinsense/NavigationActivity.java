@@ -138,8 +138,7 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_signout) {
-            firebaseAuth.signOut();
-            return true;
+            FirebaseAuth.getInstance().signOut();
         }
 
         return super.onOptionsItemSelected(item);

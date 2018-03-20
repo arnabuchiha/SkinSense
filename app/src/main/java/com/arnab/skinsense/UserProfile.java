@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,10 +34,12 @@ public class UserProfile extends Fragment {
             UserData ud = new UserData(""+i,""+i+":"+i,"");
             userDataList.add(ud);
         }
+        Toast.makeText(view.getContext(), "hello", Toast.LENGTH_SHORT).show();
         RecyclerView.LayoutManager layoutManager=new LinearLayoutManager(view.getContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.addItemDecoration(new DividerItemDecoration(view.getContext(),LinearLayoutManager.VERTICAL));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
+        userDataAdapter = new UserDataAdapter(userDataList);
         recyclerView.setAdapter(userDataAdapter);
         super.onViewCreated(view, savedInstanceState);
     }
