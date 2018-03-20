@@ -58,6 +58,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'org.tensorflow:tensorflow-android:+'
     compile 'com.wonderkiln:camerakit:0.13.1'
+    compile 'com.lyft:scissors:1.1.1'
 
     //Firebase Dependencies
     compile 'com.google.firebase:firebase-core:11.8.0'

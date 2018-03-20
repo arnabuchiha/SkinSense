@@ -21,6 +21,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Crop"
+            android:label="@string/title_activity_crop"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".SignupActivity"></activity>
