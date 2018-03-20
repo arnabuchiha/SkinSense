@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.arnab.skinsense.MainActivity">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/cameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|top" />
+
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnToggleCamera"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_action_cached"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="auto" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnDetectObject"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_action_camera"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:backgroundTint="#3b5998"
+        app:fabSize="auto" />
+    <ImageView
+        android:id="@+id/imageViewResult"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="50dp"
+        android:padding="2dp" />
+
+</FrameLayout>

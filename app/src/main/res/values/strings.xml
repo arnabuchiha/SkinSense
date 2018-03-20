@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Skin Sense</string>
+    <string name="toggle_camera">Toggle Camera</string>
+    <string name="detect_object">Detect Object</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_crop">Crop</string>
+    <string name="action_signout">Sign Out</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

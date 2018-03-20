@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:context="com.example.rajnish.nearby2.MapsActivity"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/B_hospital"
+        android:layout_width="120px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/ic_map"
+        android:onClick="onClick"
+        android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp" />
+
+</RelativeLayout>
