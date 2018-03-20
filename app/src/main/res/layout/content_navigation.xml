@@ -7,5 +7,8 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.arnab.skinsense.NavigationActivity"
     tools:showIn="@layout/app_bar_navigation">
-
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragmentview"></FrameLayout>
 </android.support.constraint.ConstraintLayout>

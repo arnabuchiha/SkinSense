@@ -1,10 +1,13 @@
 package com.arnab.skinsense;
 
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -147,9 +150,9 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
+        android.support.v4.app.Fragment fragment = null;
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            fragment = new UserProfile();
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
@@ -160,6 +163,15 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
 
         } else if (id == R.id.nav_send) {
 
+        }
+
+        if (fragment!=null)
+        {
+            FragmentManager fragmentManager=getSupportFragmentManager();
+            FragmentTransaction ft=fragmentManager.beginTransaction();
+
+            ft.replace(R.id.fragmentview,fragment);
+            ft.commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
