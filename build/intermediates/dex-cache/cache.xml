@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.7.0-rc1.aar\269c96ff14a867d31569698cc4985bca\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7e33b895bce39ad22757ea8a41a3674ff19b9907">
+        <dex dex="D:\My android projects\SkinSense-Hackathon-Project\app\build\intermediates\transforms\preDex\release\4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\27d8b8024c3a4a871ffc2a1224ba1670\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e41a052c714bf67f743c22ed74153422ad773f88">
+        <dex dex="D:\My android projects\SkinSense-Hackathon-Project\app\build\intermediates\transforms\preDex\release\13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\6581dfae97da8f86df42b6c64e524347\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f0f484b1a18c1676984dfea4e572ceffda2f3b78">
+        <dex dex="D:\My android projects\SkinSense-Hackathon-Project\app\build\intermediates\transforms\preDex\release\12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\hawk-2.0.1.aar\ec794fb25e99173a68b739aef766baf4\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6d68a8fd0dd5d9a2b4e415a8411bf8b6aa50542f">
+        <dex dex="D:\My android projects\SkinSense-Hackathon-Project\app\build\intermediates\transforms\preDex\release\10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="D:\My android projects\SkinSense-Hackathon-Project\app\build\intermediates\transforms\preDex\release\11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\9fdac329397b36da40df60e2d24cde5d\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="601ebd8fa027a3dad924ffa1cb14689ced5aa436">
+        <dex dex="D:\My android projects\SkinSense-Hackathon-Project\app\build\intermediates\transforms\preDex\release\14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\conceal-1.1.3.aar\f0d1856215656156c49e6732b4dee82d\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="30cbc9b94a9a9e3c5d4252fde59e8db066460917">
+        <dex dex="D:\My android projects\SkinSense-Hackathon-Project\app\build\intermediates\transforms\preDex\release\42.jar" />
+    </item>
+
+</items>

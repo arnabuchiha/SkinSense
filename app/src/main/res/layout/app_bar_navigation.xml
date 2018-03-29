@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#00455c"/>
+            android:background="@drawable/gradient"/>
 
     </android.support.design.widget.AppBarLayout>
 
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:background="#00455c"
+        android:background="@color/colorAccent"
         android:theme="@style/Theme.Design.Light"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
