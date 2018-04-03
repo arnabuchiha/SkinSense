@@ -35,15 +35,8 @@ public class Crop extends AppCompatActivity {
         setContentView(R.layout.activity_crop);
         FloatingActionButton crop=findViewById(R.id.cropButton);
         Intent intent=getIntent();
-        String filename = getIntent().getStringExtra("bitmap");
-        bitmap= null;
-        try {
-            FileInputStream is = this.openFileInput(filename);
-            bitmap = BitmapFactory.decodeStream(is);
-            is.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        //String filename = getIntent().getStringExtra("bitmap");
+        bitmap= BitmapHelper.getInstance().getBitmap();
         cropView=findViewById(R.id.crop_view);
         cropView.setImageBitmap(bitmap);
         crop.setOnClickListener(new View.OnClickListener() {

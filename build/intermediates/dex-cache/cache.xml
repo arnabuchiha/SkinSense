@@ -3,13 +3,13 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.7.0-rc1.aar\269c96ff14a867d31569698cc4985bca\jars\classes.jar"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\cardview-v7-24.2.1.aar\118a2badac779c5c32487b5b9d8fa017\jars\classes.jar"
         jumboMode="false"
         min-sdk-version="16"
         optimize="true"
         revision="26.0.2"
-        sha1="7e33b895bce39ad22757ea8a41a3674ff19b9907">
-        <dex dex="D:\My android projects\SkinSense-Hackathon-Project\app\build\intermediates\transforms\preDex\release\4.jar" />
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="D:\My android projects\SkinSense-Hackathon-Project\app\build\intermediates\transforms\preDex\release\65.jar" />
     </item>
     <item
         is-multidex="false"
@@ -50,6 +50,16 @@
         revision="26.0.2"
         sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
         <dex dex="D:\My android projects\SkinSense-Hackathon-Project\app\build\intermediates\transforms\preDex\release\11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.7.0.aar\909bd82606d133cadb0928d304a34462\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7e33b895bce39ad22757ea8a41a3674ff19b9907">
+        <dex dex="D:\My android projects\SkinSense-Hackathon-Project\app\build\intermediates\transforms\preDex\release\63.jar" />
     </item>
     <item
         is-multidex="false"

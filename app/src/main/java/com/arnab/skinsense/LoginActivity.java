@@ -1,13 +1,16 @@
 package com.arnab.skinsense;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,72 +18,105 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.FirebaseDatabase;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
-    private EditText email,password;
+public class LoginActivity extends AppCompatActivity {
+
+    private EditText inputEmail, inputPassword;
     private TextView login;
     private TextView signup;
-    private FirebaseAuth firebaseAuth;
+    private FirebaseAuth auth;
+    private ProgressDialog pd;
+    private Button btnReset;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        //Get Firebase auth instance
+        auth = FirebaseAuth.getInstance();
+        pd=new ProgressDialog(LoginActivity.this);
+        if (auth.getCurrentUser() != null) {
+            startActivity(new Intent(LoginActivity.this, NavigationActivity.class));
+            finish();
+        }
+
+        // set the view now
         setContentView(R.layout.activity_login);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
-        firebaseAuth = FirebaseAuth.getInstance();
+        inputEmail = (EditText) findViewById(R.id.email);
+        inputPassword = (EditText) findViewById(R.id.password);
+        //progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        signup = (TextView) findViewById(R.id.signup);
+        login = (TextView) findViewById(R.id.login);
+        //btnReset = (Button) findViewById(R.id.btn_reset_password);
 
-        email=findViewById(R.id.email);
-        password=findViewById(R.id.password);
-        login = findViewById(R.id.login);
-        signup = findViewById(R.id.signup);
-        login.setOnClickListener(this);
-        signup.setOnClickListener(this);
-    }
-    @Override
-    public void onClick(View view){
-        switch (view.getId()){
-            case R.id.login:{
-                firebaseAuth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString())
+        //Get Firebase auth instance
+        auth = FirebaseAuth.getInstance();
+
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, SignupActivity.class));
+            }
+        });
+
+        /*btnReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
+            }
+        });*/
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = inputEmail.getText().toString();
+                final String password = inputPassword.getText().toString();
+
+                if (TextUtils.isEmpty(email)) {
+                    Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(password)) {
+                    Toast.makeText(getApplicationContext(), "Enter password!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                //progressBar.setVisibility(View.VISIBLE);
+                pd.setMessage("Signing in");
+                pd.setCancelable(false);
+                pd.show();
+
+                //authenticate user
+                auth.signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
-                                if(!task.isSuccessful()){
-                                    Toast.makeText(LoginActivity.this, "Failed", Toast.LENGTH_SHORT).show();
-                                }
-                                else {
-                                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                                    if(user.isEmailVerified()){
-                                        //Toast.makeText(LoginActivity.this, "done", Toast.LENGTH_SHORT).show();
-                                        setResult(9);
-                                        finish();
+                                // If sign in fails, display a message to the user. If sign in succeeds
+                                // the auth state listener will be notified and logic to handle the
+                                // signed in user can be handled in the listener.
+                                //progressBar.setVisibility(View.GONE);
+                                pd.dismiss();
+                                if (!task.isSuccessful()) {
+                                    // there was an error
+                                    if (password.length() < 6) {
+                                        inputPassword.setError(getString(R.string.minimum_password));
+                                    } else {
+                                        Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                                     }
-                                    else{
-                                        Toast.makeText(LoginActivity.this, "Failed", Toast.LENGTH_SHORT).show();
-                                    }
+                                } else {
+                                    Intent intent = new Intent(LoginActivity.this, NavigationActivity.class);
+                                    startActivity(intent);
+                                    finish();
                                 }
                             }
                         });
-                break;
             }
-            case R.id.signup:{
-                startActivityForResult(new Intent(LoginActivity.this, SignupActivity.class), 8);
-                break;
-            }
-        }
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if(resultCode==requestCode){
-
-        }
-        else {
-            setResult(-1);
-            finish();
-        }
+        });
     }
 }

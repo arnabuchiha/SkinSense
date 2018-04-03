@@ -12,9 +12,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-/**
- * Created by AlphaBAT69 on 20-03-2018.
- */
+
 
 public class UserDataAdapter extends RecyclerView.Adapter<UserDataAdapter.ViewHolder>{
     private List<UserData> detailsList;

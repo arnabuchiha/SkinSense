@@ -86,7 +86,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onImage(CameraKitImage cameraKitImage) {
                 Bitmap bitmap = cameraKitImage.getBitmap();
-                String filename = "bitmap.png";
+                BitmapHelper.getInstance().setBitmap(bitmap);
+                pd.dismiss();
+                Intent intent=new Intent(MainActivity.this,Crop.class);
+                //intent.putExtra("bitmap",filename);
+                startActivityForResult(intent,2);
+                /*String filename = "bitmap.png";
 
                 try {
                     FileOutputStream stream = openFileOutput(filename, Context.MODE_PRIVATE);
@@ -104,8 +109,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 //bitmap=Bitmap.createScaledBitmap((bitmap,bitmap.getWidth(),bitmap.getHeight(),false);
                 //bitmap = Bitmap.createScaledBitmap(bitmap, INPUT_SIZE, INPUT_SIZE, false);
-
-
+                */
 
             }
 
@@ -250,5 +254,13 @@ public class MainActivity extends AppCompatActivity {
                 btnDetectObject.setVisibility(View.VISIBLE);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent=new Intent(MainActivity.this,NavigationActivity.class);
+        startActivity(intent);
+        finish();
+        super.onBackPressed();
     }
 }
