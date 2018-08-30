@@ -30,4 +30,5 @@ public class UserData {
     public void setBitmap(String bitmap) {
         this.bitmap = bitmap;
     }
+
 }
