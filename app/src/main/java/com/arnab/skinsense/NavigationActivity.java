@@ -201,7 +201,14 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        
+        if (id == R.id.action_settings) {
+            android.support.v4.app.Fragment fragment = new Settings();
+            FragmentManager fragmentManager=getSupportFragmentManager();
+            FragmentTransaction ft=fragmentManager.beginTransaction();
+
+            ft.replace(R.id.fragmentview,fragment);
+            ft.commit();
+        }
         if (id == R.id.action_signout) {
             firebaseAuth.signOut();
             return true;
