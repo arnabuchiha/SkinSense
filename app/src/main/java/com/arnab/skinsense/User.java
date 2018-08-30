@@ -1,9 +1,5 @@
 package com.arnab.skinsense;
 
-/**
- * Created by AlphaBAT69 on 19-03-2018.
- */
-
 public class User {
     private String username;
     private String email;

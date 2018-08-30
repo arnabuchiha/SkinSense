@@ -15,7 +15,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
 /**
- * Created by User on 21-03-2018.
+ * Created by Arnab on 21-03-2018.
  */
 
 public class Settings extends Fragment {

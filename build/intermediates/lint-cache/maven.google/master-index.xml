@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <com.android.support.constraint/>
   <com.android.databinding/>
@@ -37,4 +37,74 @@
   <com.google.ar/>
   <androidx.core/>
   <com.google.android.things/>
+  <com.android.tools.build.jetifier/>
+  <tools.base.build-system.debug/>
+  <androidx.databinding/>
+  <androidx.constraintlayout/>
+  <org.chromium.net/>
+  <com.google.android.play/>
+  <androidx.multidex/>
+  <com.google.android.material/>
+  <androidx.test.services/>
+  <androidx.test.janktesthelper/>
+  <androidx.test/>
+  <androidx.test.espresso/>
+  <androidx.test.espresso.idling/>
+  <androidx.test.uiautomator/>
+  <androidx.room/>
+  <androidx.paging/>
+  <androidx.lifecycle/>
+  <androidx.sqlite/>
+  <androidx.arch.core/>
+  <android.arch.work/>
+  <android.arch.navigation/>
+  <androidx.mediarouter/>
+  <androidx.percentlayout/>
+  <androidx.emoji/>
+  <androidx.cardview/>
+  <androidx.preference/>
+  <androidx.wear/>
+  <androidx.legacy/>
+  <androidx.documentfile/>
+  <androidx.car/>
+  <androidx.swiperefreshlayout/>
+  <androidx.leanback/>
+  <androidx.appcompat/>
+  <androidx.customview/>
+  <androidx.gridlayout/>
+  <androidx.vectordrawable/>
+  <androidx.heifwriter/>
+  <androidx.transition/>
+  <androidx.print/>
+  <androidx.viewpager/>
+  <androidx.annotation/>
+  <androidx.exifinterface/>
+  <androidx.dynamicanimation/>
+  <androidx.browser/>
+  <androidx.localbroadcastmanager/>
+  <androidx.asynclayoutinflater/>
+  <androidx.contentpager/>
+  <androidx.slidingpanelayout/>
+  <androidx.cursoradapter/>
+  <androidx.media/>
+  <androidx.loader/>
+  <androidx.interpolator/>
+  <androidx.coordinatorlayout/>
+  <androidx.fragment/>
+  <androidx.tvprovider/>
+  <androidx.slice/>
+  <androidx.collection/>
+  <androidx.recommendation/>
+  <androidx.drawerlayout/>
+  <androidx.recyclerview/>
+  <androidx.webkit/>
+  <androidx.palette/>
+  <com.google.ar.sceneform/>
+  <com.google.ar.sceneform.ux/>
+  <androidx.test.ext/>
+  <com.google.android.ads.consent/>
+  <androidx.versionedparcelable/>
+  <androidx.media2/>
+  <com.google.ads.afsn/>
+  <com.google.android.ads/>
 </metadata>
