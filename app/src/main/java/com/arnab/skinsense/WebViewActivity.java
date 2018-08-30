@@ -20,7 +20,7 @@ public class WebViewActivity extends AppCompatActivity {
 
         String s = getIntent().getStringExtra("link");
 
-        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
+        web.loadUrl(s);
 
     }
 }
