@@ -213,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
             UserData ud = new UserData(results.toString(),bit);
             ListHolder.list.add(ud);
             Hawk.put(FirebaseAuth.getInstance().getCurrentUser().getEmail(),ListHolder.list);
-            if(Hawk.contains(FirebaseAuth.getInstance().getCurrentUser().getEmail()));
+            if(Hawk.contains(FirebaseAuth.getInstance().getCurrentUser().getEmail()))
             Toast.makeText(this,Hawk.get(FirebaseAuth.getInstance().getCurrentUser().getEmail()).toString(), Toast.LENGTH_SHORT).show();
         }
     }
