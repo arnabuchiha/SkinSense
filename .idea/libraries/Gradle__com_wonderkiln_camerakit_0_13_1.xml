@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.wonderkiln:camerakit-0.13.1">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/camerakit-0.13.1.aar/5cb1944972e5b2a4cad609e67d51ec2c/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/camerakit-0.13.1.aar/5cb1944972e5b2a4cad609e67d51ec2c/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/camerakit-0.13.1.aar/1b5f04f389dea890160c1d7279c3af7b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/camerakit-0.13.1.aar/1b5f04f389dea890160c1d7279c3af7b/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
