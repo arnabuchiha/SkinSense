@@ -38,6 +38,7 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
     private FirebaseAuth.AuthStateListener authStateListener;
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
+    private String email;
     android.support.v4.app.Fragment frag;
 
     private TextView nameofuser, emailofuser;
@@ -45,9 +46,11 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //email = FirebaseAuth.getInstance().getCurrentUser().getEmail();
+
         Hawk.init(NavigationActivity.this).setEncryption(new NoEncryption()).build();
-        if(Hawk.contains("pred")){
-            ListHolder.list=Hawk.get("pred");
+        if(Hawk.contains(FirebaseAuth.getInstance().getCurrentUser().getEmail())){
+            ListHolder.list=Hawk.get(FirebaseAuth.getInstance().getCurrentUser().getEmail());
         }
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference().child("user");

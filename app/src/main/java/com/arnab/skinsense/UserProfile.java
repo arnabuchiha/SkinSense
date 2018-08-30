@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.gson.Gson;
@@ -28,6 +29,7 @@ public class UserProfile extends Fragment {
     private UserDataAdapter userDataAdapter;
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
+    private String email;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
@@ -46,7 +48,7 @@ public class UserProfile extends Fragment {
         recyclerView.addItemDecoration(new DividerItemDecoration(view.getContext(),LinearLayoutManager.VERTICAL));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        userDataAdapter = new UserDataAdapter((List<UserData>) Hawk.get("pred"));
+        userDataAdapter = new UserDataAdapter((List<UserData>) Hawk.get(FirebaseAuth.getInstance().getCurrentUser().getEmail()));
         recyclerView.setAdapter(userDataAdapter);
 
         super.onViewCreated(view, savedInstanceState);
