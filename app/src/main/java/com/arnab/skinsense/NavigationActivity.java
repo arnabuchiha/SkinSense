@@ -41,7 +41,7 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
     private String email;
     android.support.v4.app.Fragment frag;
 
-    private TextView nameofuser, emailofuser;
+    private TextView nameofuser, emailofuser, surprisetext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +70,12 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
         };
 
         setContentView(R.layout.activity_navigation);
+        surprisetext = findViewById(R.id.surprisetext);
+
+        if(ListHolder.list.size() == 0)
+            surprisetext.setVisibility(View.VISIBLE);
+        else
+            surprisetext.setVisibility(View.GONE);
 
         frag = new UserProfile();
         if (frag!=null)
@@ -195,6 +201,7 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        
         if (id == R.id.action_signout) {
             firebaseAuth.signOut();
             return true;

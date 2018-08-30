@@ -11,5 +11,17 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fragmentview"></FrameLayout>
+        android:id="@+id/fragmentview">
+
+        <TextView
+            android:id="@+id/surprisetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:fontFamily="casual"
+            android:text="Oops...Nothing to show here!!!\nYou can start scanning by tapping on the\nCamera Icon..."
+            android:visibility="gone"/>
+    </FrameLayout>
 </android.support.constraint.ConstraintLayout>
