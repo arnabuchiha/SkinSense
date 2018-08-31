@@ -78,7 +78,7 @@ public class AboutUc extends android.support.v4.app.Fragment implements View.OnC
                 break;
             }
             case R.id.rajnishin:{
-                i.putExtra("link", "https://pornhub.com");
+                i.putExtra("link", "https://example.com");
                 break;
             }
         }
