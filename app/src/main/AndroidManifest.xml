@@ -48,7 +48,8 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".WebViewActivity" />
+        <activity android:name=".WebViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
