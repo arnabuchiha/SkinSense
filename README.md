@@ -44,14 +44,22 @@ consultancy
 ## Screenshots
 <p align="center">
 
-<img src='https://github.com/AlphaBAT69/GameOfLife/blob/master/gifs/java.gif' width='700px'>
+<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s1.png' width='150px'>
+<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s2.png' width='150px'>
+<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s3.png' width='150px'>
+<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s4.png' width='150px'>
+<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s5.png' width='150px'>
+<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s6.png' width='150px'>
+<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s7.png' width='150px'>
 
 </p>
 
 ## Special Mentions
 Stood first among the 70 teams in Hitsathon V2.0 (Hindustan University Hackathon)
 
-## Team Members
+## Team Members:
+Team Scary Bugs:
+
 + [Tanay Toshniwal](https://github.com/tanaytoshniwal)
 + [Arnab Ray](https://github.com/arnabuchiha)
 + [Ritvik Jain](https://github.com/Ritvikjain)
