@@ -1,32 +1,58 @@
-# Problem Statement: #
+# Skin Sense: A Skin Cancer Detection App
 
-  In recent days, skin cancer is seen as one of the most Hazardous form of the Cancers found in Humans. Skin cancer is found in various types such as Melanoma, Basal and Squamous cell Carcinoma among which Melanoma is the most unpredictable. With millions of new cases each year it accounts for 75% of skin cancer deaths . The detection of Melanoma cancer in early stage can be helpful to cure it.
+## Problem Statement
+Skin Cancer is the most common cancer and is often
+ignored by people at an early stage. An estimated
+178,560 cases of melanoma will be diagnosed in the
+U.S. in 2018. If melanoma is recognized and treated
+early, it is almost always curable, but if it is not, the
+cancer can advance and spread to other parts of the
+body, where it becomes hard to treat and can be fatal.
 
+## Solution
+Melanoma, if treated early, could be cured. Our
+application, with 84.7% accuracy is capable
+enough to classify Melanoma skin cancer even at
+an early stage remotly. One can easily classify
+the type of cancer as Melanoma or not and can
+take actions accordingly.
 
-# Solution: #
+## Technology Stack
++ TensorFlow - Google's DeepLearning
+Framework
 
-  In this hack we present a mobile application for detection of Melanoma Skin Cancer using Deep learning techniques. We detect if a certain mole is Melanoma or Non-melanoma using a CNN model which has an accuracy of 75%. The model is trained over an image dataset of 11 GB.
++ Model Architecture Inception v3
+(mobilenet_100_224)
 
++ Android Studio
 
-# Using Deep Learning in our App: #
- 
-   We have retrained the final layer of the Google’s inception v3 model which is ***48 layers deep with an image dataset of 11 GB*** with learning rate 0.01 and 12000 steps. After retraining we attained us ***75 % final test accuracy***.
-The image dataset contains two classification “Melanoma” and “Non Melanoma”.
-The image dataset was divided in ratio of 8:1:1 for training , validation and testing respectively.
-The model is used in the app by creating ***TensorFlowImageClassifier***. When the user clicks the image it is taken as bitmap input by the classifier.
++ Google Maps API
 
++ Firebase - Google's Mobile and Web App
+Development Framework
 
-# History of previous cases is also stored: #
-  
-   When the user scans the output percentage is stored as history in his profile which is done offline for future reference.
+## Features
++ Offline data storage for statistical analysis and expertise
+consultancy
 
++ Offline Classification
 
-# Nearby Medical Services Are Available on One Click: #
-   
-   This feature enables the user to directly view all the nearby hospitals on Map.
++ Google authentication with email verification
 
++ In app Hospital finder
 
-# THE BIG FEATURE #
-    
-   The image recognition is On-device making the ***app fully function offline***.
-   This helps the people to use our app even in remote areas.
+## Screenshots
+<p align="center">
+
+<img src='https://github.com/AlphaBAT69/GameOfLife/blob/master/gifs/java.gif' width='700px'>
+
+</p>
+
+## Special Mentions
+Stood first among the 70 teams in Hitsathon V2.0 (Hindustan University Hackathon)
+
+## Team Members
++ [Tanay Toshniwal](https://github.com/tanaytoshniwal)
++ [Arnab Ray](https://github.com/arnabuchiha)
++ [Ritvik Jain](https://github.com/Ritvikjain)
++ [Rajnish Raj](https://github.com/ShadowRajnsih)
