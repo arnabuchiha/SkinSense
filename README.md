@@ -44,13 +44,13 @@ consultancy
 ## Screenshots
 <p align="center">
 
-<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s1.png' width='90px'>
-<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s2.png' width='90px'>
-<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s3.png' width='90px'>
-<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s4.png' width='90px'>
-<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s5.png' width='90px'>
-<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s6.png' width='90px'>
-<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s7.png' width='90px'>
+<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s1.png' width='150px'>
+<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s2.png' width='150px'>
+<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s3.png' width='150px'>
+<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s4.png' width='150px'>
+<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s5.png' width='150px'>
+<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s6.png' width='150px'>
+<img src='https://github.com/arnabuchiha/SkinSense/blob/tanay/screenshots/s7.png' width='150px'>
 
 </p>
 
