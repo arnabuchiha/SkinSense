@@ -57,7 +57,9 @@ consultancy
 ## Special Mentions
 Stood first among the 70 teams in Hitsathon V2.0 (Hindustan University Hackathon)
 
-## Team Members
+## Team Members:
+Team Scary Bugs:
+
 + [Tanay Toshniwal](https://github.com/tanaytoshniwal)
 + [Arnab Ray](https://github.com/arnabuchiha)
 + [Ritvik Jain](https://github.com/Ritvikjain)
