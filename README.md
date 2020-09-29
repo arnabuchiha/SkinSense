@@ -1,5 +1,7 @@
 # Skin Sense: A Skin Cancer Detection App
 
+![Branch master](https://img.shields.io/badge/branch-master-brightgreen.svg?style=flat-square)
+
 ## Problem Statement
 Skin Cancer is the most common cancer and is often
 ignored by people at an early stage. An estimated
@@ -64,3 +66,7 @@ Team Scary Bugs:
 + [Arnab Ray](https://github.com/arnabuchiha)
 + [Ritvik Jain](https://github.com/Ritvikjain)
 + [Rajnish Raj](https://github.com/ShadowRajnsih)
+
+
+<p align="center">
+Show some love ❤️ and Star ⭐️ the Repository to support the project.
